@@ -7,10 +7,11 @@ export default function Page() {
   const demos = db.demo.findMany();
   return (
     <Boundary
-      label="Exa"
+      label="Examples"
       animateRerendering={false}
       kind="solid"
-      className="flex flex-col gap-9"
+      className="flex flex-col gap-9 text-yellow-500"
+      color="orange"
     >
       {demos.map((section) => {
         return (
